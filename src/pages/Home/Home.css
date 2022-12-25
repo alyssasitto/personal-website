@@ -1,0 +1,15 @@
+.home-page header {
+	text-align: center;
+}
+
+.home-page header p {
+	line-height: 1.4;
+	color: #b09bbd;
+}
+
+.home-page h1 {
+	font-size: 3.5rem;
+	padding: 0 1rem;
+	margin-bottom: 1rem;
+	color: #ebcfea;
+}
