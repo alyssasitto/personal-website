@@ -13,10 +13,12 @@ html {
 body {
 	font-family: "Fragment Mono";
 	color: #fff;
-	background: linear-gradient(#4d084c, #080020 70%);
-	padding: 0 1rem;
-	font-size: 1.6rem;
 	min-height: 100vh;
+	background: linear-gradient(#4d084c, #080020 70%);
+	background-attachment: fixed;
+	padding: 1rem;
+	padding-bottom: 10rem;
+	font-size: 1.6rem;
 }
 
 img {

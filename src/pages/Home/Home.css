@@ -1,5 +1,10 @@
+.home-page {
+	height: 100%;
+}
+
 .home-page header {
 	text-align: center;
+	margin-bottom: 4rem;
 }
 
 .home-page header p {

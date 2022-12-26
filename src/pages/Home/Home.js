@@ -1,3 +1,5 @@
+import Skills from "../../components/Skills/Skills";
+
 require("./Home.css");
 
 function Home() {
@@ -13,6 +15,8 @@ function Home() {
 					service. Check out my work below to get an idea of who I am.
 				</p>
 			</header>
+
+			<Skills />
 		</div>
 	);
 }
