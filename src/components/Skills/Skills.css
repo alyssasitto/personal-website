@@ -1,110 +1,42 @@
+.skills-container {
+	color: #fff;
+	background-color: #140826;
+	padding: 3rem 0 4rem 0;
+	margin-bottom: 4rem;
+}
+
 .skills-container h1 {
 	text-align: center;
+	margin-bottom: 3rem;
+	font-size: 3rem;
 }
 
-.hexagon {
-	height: 13rem;
-	width: 13rem;
-	background-color: #ea0599;
-	clip-path: polygon(24% 0, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-	position: relative;
-	z-index: 2;
+.skills {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 2rem;
 }
 
-.hexagon::after {
-	content: "";
-	height: 8rem;
-	width: 8rem;
-	background-color: #fbcdeb;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	padding: 2rem;
-	transform: translate(-50%, -50%);
-	clip-path: polygon(24% 0, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-}
-
-.outer-container {
+.skills div {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
 }
 
-.outer-container.up::before {
-	content: "";
-	position: absolute;
-	height: 7rem;
-	width: 0.8rem;
-	background-color: #ea0599;
-	z-index: 1;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.outer-container.down::before {
-	content: "";
-	position: absolute;
-	height: 7rem;
-	width: 0.8rem;
-	background-color: #ea0599;
-	z-index: 1;
-	left: 50%;
-	bottom: 0;
-	transform: translate(-50%, 50%);
-}
-
-.header-name {
-	position: absolute;
-}
-
-.header-name.up {
-	top: 0;
-	left: 0;
-	left: 50%;
-	transform: translate(-50%, -7rem);
-}
-
-.header-name.down {
-	bottom: 0;
-	left: 0;
-	left: 50%;
-	transform: translate(-50%, 7rem);
+.skills h2 {
+	font-size: 1.7rem;
+	margin-top: 1rem;
 }
 
 .logo {
-	position: absolute;
-	z-index: 7;
-	width: 7rem;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.logo-helper-larger {
-	width: 11rem;
+	width: 6rem;
 }
 
 .logo-helper-smaller {
-	width: 6.3rem;
+	width: 5rem;
 }
 
-.swiper {
-	overflow-x: hidden;
-	padding-top: 10rem;
-}
-
-.swiper-wrapper {
-	padding-bottom: 7rem;
-}
-
-.swiper-pagination-fraction {
-	display: none;
-}
-
-.swiper-pagination-bullet {
-	background: rgb(230, 0, 255);
-}
-
-.swiper-pagination {
-	position: relative;
-	margin-top: 5rem;
+.mongo-helper {
+	width: 4rem;
 }

@@ -1,22 +1,51 @@
+import { useState } from "react";
+
 import Skills from "../../components/Skills/Skills";
+import Projects from "../../components/Projects/Projects";
+import ContactCard from "../../components/ContactCard/ContactCard";
+import Navbar from "../../components/Navbar/Navbar";
 
 require("./Home.css");
 
 function Home() {
+	const [navState, setNavState] = useState("");
+
 	return (
-		<div className="home-page">
+		<div className={"home-page " + navState}>
+			<Navbar navState={navState} setNavState={setNavState} />
 			<header>
-				<img src="images/header-img.png"></img>
-				<h1>Hello I'm Alyssa</h1>
+				<h1 className="heading">
+					Hello I'm <span>Alyssa</span>
+				</h1>
 				<p>
 					I'm an aspiring web developer from southern California with a passion
 					for coding. I turn my ideas into user-friendly and aesthetically
-					pleasing web applications with a goal of providing the best possible
-					service. Check out my work below to get an idea of who I am.
+					pleasing web applications.
 				</p>
+
+				<img src="images/hero.png" className="hero"></img>
 			</header>
 
 			<Skills />
+
+			<Projects />
+
+			<ContactCard />
+
+			<footer>
+				<div className="socials">
+					<a href="https://github.com/alyssasitto">
+						<img src="images/github-logo.png" className="social"></img>
+					</a>
+					<a href="https://www.linkedin.com/in/alyssasitto">
+						<img src="images/linkedin-logo.png" className="social"></img>
+					</a>
+					<a href="mailto:alyssasitto1@gmail.com">
+						<img src="images/email-logo.png" className="social"></img>
+					</a>
+				</div>
+				<small>Designed and Built by Alyssa Sitto</small>
+			</footer>
 		</div>
 	);
 }

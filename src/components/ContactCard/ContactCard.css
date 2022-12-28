@@ -1,0 +1,31 @@
+.contact-card {
+	height: 30rem;
+	margin-bottom: 3rem;
+	padding: 2rem;
+	text-align: center;
+	color: #fff;
+	background: linear-gradient(#9450ff, #451d81, #2b1946);
+}
+
+.contact-card h2 {
+	font-size: 3.5rem;
+	margin-bottom: 1rem;
+}
+
+.contact-card p {
+	color: #d4b9ff;
+	font-size: 1.8rem;
+}
+
+.contact-btn {
+	display: block;
+	margin-top: 2rem;
+	text-decoration: none;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #fff;
+	background-color: #140826;
+	padding: 1rem;
+	margin: 2rem 8rem 0 8rem;
+	border-radius: 8px;
+}
