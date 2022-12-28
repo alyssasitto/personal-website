@@ -61,20 +61,16 @@
 }
 
 @media screen and (min-width: 1000px) {
+	.projects-container h1 {
+		font-size: 4rem;
+	}
+
 	.projects {
+		flex-direction: row;
+		padding: 0 2rem;
 	}
 
 	.project-card {
-		width: 50%;
-		position: relative;
-		left: 50%;
-		transform: translate(-50%);
-		height: 20rem;
-	}
-
-	.project-card img {
-		left: -25rem;
-		top: 60%;
-		width: 60rem;
+		height: 40vh;
 	}
 }

@@ -19,7 +19,7 @@ function Projects() {
 					</div>
 				</section>
 
-				<section className="project-card">
+				<section className="project-card left-card">
 					<img src="images/nutrition-app.png"></img>
 					<div>
 						<h2>Healthy Living</h2>

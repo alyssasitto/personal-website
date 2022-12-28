@@ -82,3 +82,24 @@
 .navbar.active ul {
 	width: 23rem;
 }
+
+@media screen and (min-width: 1000px) {
+	.toggle {
+		display: none;
+	}
+
+	.navbar ul {
+		position: relative;
+		width: fit-content;
+		background-color: transparent;
+		padding: 0 3rem 0 0;
+		flex-direction: row;
+	}
+
+	.navbar ul li a {
+		color: black;
+		border-right: 2px solid #9450ff;
+		padding-right: 3rem;
+		padding-left: 0;
+	}
+}

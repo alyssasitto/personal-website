@@ -34,7 +34,7 @@ function Navbar(props) {
 						Projects
 					</a>
 				</li>
-				<li>
+				<li className="contact">
 					<a href="#contact" onClick={closeMenu}>
 						Contact me
 					</a>

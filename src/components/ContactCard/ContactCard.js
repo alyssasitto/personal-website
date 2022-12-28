@@ -7,7 +7,7 @@ function ContactCard() {
 			<p>
 				I'm currently looking for new opportunities so please email me if you
 				have any positions you feel I'd be a great fit for. I will get back to
-				you as as soon as possible.
+				you as soon as possible.
 			</p>
 			<a href="mailto:alyssasitto1@gmail.com" className="contact-btn">
 				Contact me
