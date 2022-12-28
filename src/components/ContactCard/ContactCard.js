@@ -8,10 +8,10 @@ function ContactCard() {
 				I'm currently looking for new opportunities so please email me if you
 				have any positions you feel I'd be a great fit for. I will get back to
 				you as as soon as possible.
-				<a href="mailto:alyssasitto1@gmail.com" className="contact-btn">
-					Contact me
-				</a>
 			</p>
+			<a href="mailto:alyssasitto1@gmail.com" className="contact-btn">
+				Contact me
+			</a>
 		</div>
 	);
 }
