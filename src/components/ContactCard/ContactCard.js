@@ -2,7 +2,7 @@ require("./ContactCard.css");
 
 function ContactCard() {
 	return (
-		<div className="contact-card">
+		<div id="contact" className="contact-card">
 			<h2>Get in touch</h2>
 			<p>
 				I'm currently looking for new opportunities so please email me if you

@@ -5,6 +5,10 @@
 	text-align: center;
 	color: #fff;
 	background: linear-gradient(#9450ff, #451d81, #2b1946);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .contact-card h2 {
@@ -28,5 +32,12 @@
 	padding: 1rem;
 	border-radius: 8px;
 	width: fit-content;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (min-width: 700px) {
+	.contact-card p {
+		padding: 0 4rem;
+	}
 }

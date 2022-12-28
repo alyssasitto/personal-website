@@ -40,3 +40,18 @@
 .mongo-helper {
 	width: 4rem;
 }
+
+@media screen and (min-width: 1000px) {
+	.skills {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.skills-container h1 {
+		font-size: 5rem;
+	}
+
+	.skills h2 {
+		font-size: 2rem;
+	}
+}

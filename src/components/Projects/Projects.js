@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
 require("./Projects.css");
 
 function Projects() {
 	return (
-		<div className="projects-container">
+		<div id="projects" className="projects-container">
 			<h1>Featured Projects</h1>
 			<div className="projects">
 				<section className="project-card">

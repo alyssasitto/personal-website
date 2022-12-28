@@ -63,3 +63,35 @@ footer {
 .social {
 	width: 3rem;
 }
+
+@media screen and (min-width: 700px) {
+	header {
+		display: flex;
+		justify-content: center;
+	}
+
+	.header-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.hero {
+		position: static;
+		transform: none;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.hero {
+		width: 80%;
+	}
+
+	.heading {
+		font-size: 6rem;
+	}
+
+	.home-page header p {
+		font-size: 2.5rem;
+	}
+}

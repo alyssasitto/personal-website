@@ -14,14 +14,16 @@ function Home() {
 		<div className={"home-page " + navState}>
 			<Navbar navState={navState} setNavState={setNavState} />
 			<header>
-				<h1 className="heading">
-					Hello I'm <span>Alyssa</span>
-				</h1>
-				<p>
-					I'm an aspiring web developer from southern California with a passion
-					for coding. I turn my ideas into user-friendly and aesthetically
-					pleasing web applications.
-				</p>
+				<div className="header-content">
+					<h1 className="heading">
+						Hello I'm <span>Alyssa</span>
+					</h1>
+					<p>
+						I'm an aspiring web developer from southern California with a
+						passion for coding. I turn my ideas into user-friendly and
+						aesthetically pleasing web applications.
+					</p>
+				</div>
 
 				<img src="images/hero.png" className="hero"></img>
 			</header>

@@ -11,6 +11,10 @@ function Navbar(props) {
 		}
 	};
 
+	const closeMenu = () => {
+		props.setNavState("");
+	};
+
 	return (
 		<div className={"navbar " + props.navState}>
 			<button onClick={clickMenu} className={"toggle " + props.navState}>
@@ -20,9 +24,21 @@ function Navbar(props) {
 			</button>
 
 			<ul>
-				<li>Skills</li>
-				<li>Projects</li>
-				<li>Contact me</li>
+				<li>
+					<a href="#skills" onClick={closeMenu}>
+						Skills
+					</a>
+				</li>
+				<li>
+					<a href="#projects" onClick={closeMenu}>
+						Projects
+					</a>
+				</li>
+				<li>
+					<a href="#contact" onClick={closeMenu}>
+						Contact me
+					</a>
+				</li>
 			</ul>
 		</div>
 	);

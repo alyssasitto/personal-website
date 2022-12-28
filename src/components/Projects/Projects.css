@@ -4,16 +4,17 @@
 
 .projects-container h1 {
 	text-align: center;
-	margin-bottom: 2rem;
+	margin-bottom: 8rem;
 }
 
 .projects {
 	display: flex;
 	flex-direction: column;
-	gap: 3rem;
+	gap: 10rem;
 }
 
 .project-card {
+	position: relative;
 	margin: 0 2rem;
 	padding: 2rem;
 	background-color: #f8f8f8;
@@ -24,14 +25,20 @@
 .project-card img {
 	border-radius: 5px;
 	margin-bottom: 1rem;
+	position: absolute;
+	left: 0;
+	left: 50%;
+	width: 25rem;
+	transform: translate(-50%, -60%);
 }
 
 .project-card h2 {
 	margin-bottom: 1rem;
+	margin-top: 7rem;
 }
 
 .project-card p {
-	color: #83719e;
+	opacity: 0.7;
 	margin-bottom: 2.5rem;
 }
 
@@ -43,4 +50,31 @@
 	padding: 1rem;
 	border-radius: 5px;
 	text-decoration: none;
+}
+
+@media screen and (min-width: 700px) {
+	.project-card {
+		width: 70%;
+		margin: auto;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.projects {
+	}
+
+	.project-card {
+		width: 50%;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+		height: 20rem;
+	}
+
+	.project-card img {
+		left: -25rem;
+		top: 60%;
+		width: 60rem;
+	}
 }

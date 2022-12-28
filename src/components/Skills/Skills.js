@@ -2,7 +2,7 @@ require("./Skills.css");
 
 function Skills() {
 	return (
-		<section className="skills-container">
+		<section id="skills" className="skills-container">
 			<h1>Skills</h1>
 
 			<div className="skills">
