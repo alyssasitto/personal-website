@@ -31,7 +31,6 @@ function Home() {
 									.start();
 							}}
 						/>
-						{/* Hello, I'm <span>Alyssa</span> */}
 					</h1>
 
 					<p>
@@ -52,13 +51,13 @@ function Home() {
 
 			<footer>
 				<div className="socials">
-					<a href="https://github.com/alyssasitto" target="_blank">
+					<a href="https://github.com/alyssasitto">
 						<img src="images/github-logo.png" className="social"></img>
 					</a>
-					<a href="https://www.linkedin.com/in/alyssasitto" target="_blank">
+					<a href="https://www.linkedin.com/in/alyssasitto">
 						<img src="images/linkedin-logo.png" className="social"></img>
 					</a>
-					<a href="mailto:alyssasitto1@gmail.com" target="_blank">
+					<a href="mailto:alyssasitto1@gmail.com">
 						<img src="images/email-logo.png" className="social"></img>
 					</a>
 				</div>

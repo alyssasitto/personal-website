@@ -11,11 +11,9 @@ function Projects() {
 						<h2>Spotify Clone</h2>
 						<p>
 							An application that uses Spotify's web API and OAuth 2.0. A user
-							must have a premium Spotify account to access the application.{" "}
+							must have a premium Spotify account to access the application.
 						</p>
-						<a href="https://alyssas-spotify-clone.netlify.app" target="_blank">
-							View project
-						</a>
+						<a href="https://alyssas-spotify-clone.netlify.app">View project</a>
 					</div>
 				</section>
 
@@ -28,9 +26,7 @@ function Projects() {
 							needs to lose, gain, or maintain weight depending on their
 							dimensions and goal.
 						</p>
-						<a href="https://healthy-living2.netlify.app" target="_blank">
-							View project
-						</a>
+						<a href="https://healthy-living2.netlify.app">View project</a>
 					</div>
 				</section>
 
@@ -40,12 +36,9 @@ function Projects() {
 						<h2>Cat Fishing</h2>
 						<p>
 							2D game built using HTML5, CSS, and Vanilla JavaScript.
-							Functionality of the game was made possible with canvas.{" "}
+							Functionality of the game was made possible with canvas.
 						</p>
-						<a
-							href="https://alyssasitto.github.io/cat-fishing-game"
-							target="_blank"
-						>
+						<a href="https://alyssasitto.github.io/cat-fishing-game">
 							View project
 						</a>
 					</div>
