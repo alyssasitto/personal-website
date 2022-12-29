@@ -12,7 +12,7 @@ html {
 }
 
 body {
-	font-family: "Mulish";
+	font-family: "Mulish", monospace;
 	color: #0f061c;
 	min-height: 100vh;
 	background-attachment: fixed;

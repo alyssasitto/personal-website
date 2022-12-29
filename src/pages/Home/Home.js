@@ -5,6 +5,8 @@ import Projects from "../../components/Projects/Projects";
 import ContactCard from "../../components/ContactCard/ContactCard";
 import Navbar from "../../components/Navbar/Navbar";
 
+import Typewriter from "typewriter-effect";
+
 require("./Home.css");
 
 function Home() {
@@ -16,8 +18,22 @@ function Home() {
 			<header>
 				<div className="header-content">
 					<h1 className="heading">
-						Hello I'm <span>Alyssa</span>
+						<Typewriter
+							options={{ loop: true }}
+							onInit={(typewriter) => {
+								typewriter
+
+									.typeString("Hello, I'm Alyssa")
+									.pauseFor(1000)
+									.deleteAll()
+									.typeString("I make things for the web")
+									.pauseFor(1000)
+									.start();
+							}}
+						/>
+						{/* Hello, I'm <span>Alyssa</span> */}
 					</h1>
+
 					<p>
 						I'm an aspiring web developer from southern California with a
 						passion for coding. I turn my ideas into user-friendly and
@@ -36,13 +52,13 @@ function Home() {
 
 			<footer>
 				<div className="socials">
-					<a href="https://github.com/alyssasitto">
+					<a href="https://github.com/alyssasitto" target="_blank">
 						<img src="images/github-logo.png" className="social"></img>
 					</a>
-					<a href="https://www.linkedin.com/in/alyssasitto">
+					<a href="https://www.linkedin.com/in/alyssasitto" target="_blank">
 						<img src="images/linkedin-logo.png" className="social"></img>
 					</a>
-					<a href="mailto:alyssasitto1@gmail.com">
+					<a href="mailto:alyssasitto1@gmail.com" target="_blank">
 						<img src="images/email-logo.png" className="social"></img>
 					</a>
 				</div>

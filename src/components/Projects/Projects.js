@@ -38,7 +38,10 @@ function Projects() {
 					<img src="images/game-app.png"></img>
 					<div>
 						<h2>Cat Fishing</h2>
-						<p>2D game built using canvas</p>
+						<p>
+							2D game built using HTML5, CSS, and Vanilla JavaScript.
+							Functionality of the game was made possible with canvas.{" "}
+						</p>
 						<a
 							href="https://alyssasitto.github.io/cat-fishing-game"
 							target="_blank"

@@ -60,6 +60,26 @@ footer {
 	margin-bottom: 1rem;
 }
 
+.socials a {
+	position: relative;
+	transition: all 0.2s ease;
+}
+
+.socials a::before {
+	content: "";
+	height: 3px;
+	width: 0px;
+	background-color: #9450ff;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.2s;
+}
+
+.socials a:hover:before {
+	width: 100%;
+}
+
 .social {
 	width: 3rem;
 }

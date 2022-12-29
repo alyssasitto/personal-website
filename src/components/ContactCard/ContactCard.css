@@ -34,6 +34,12 @@
 	width: fit-content;
 	margin-left: auto;
 	margin-right: auto;
+	border: 2px solid transparent;
+}
+
+.contact-btn:hover {
+	background-color: transparent;
+	border: 2px solid #9450ff;
 }
 
 @media screen and (min-width: 700px) {

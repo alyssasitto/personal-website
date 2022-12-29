@@ -20,6 +20,11 @@
 	background-color: #f8f8f8;
 	border-radius: 8px;
 	box-shadow: rgba(100, 100, 111, 0.526) 0px 7px 29px 0px;
+	transition: all 0.2s;
+}
+
+.project-card:hover {
+	transform: translateY(-5px);
 }
 
 .project-card img {
@@ -50,6 +55,11 @@
 	padding: 1rem;
 	border-radius: 5px;
 	text-decoration: none;
+	box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.318);
+}
+
+.project-card a:hover {
+	background: linear-gradient(#9450ff, #52298f);
 }
 
 @media screen and (min-width: 700px) {
