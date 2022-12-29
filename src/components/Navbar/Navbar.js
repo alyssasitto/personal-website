@@ -17,29 +17,32 @@ function Navbar(props) {
 
 	return (
 		<div className={"navbar " + props.navState}>
-			<button onClick={clickMenu} className={"toggle " + props.navState}>
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
+			<img src="images/nav-logo.png" className="nav-logo"></img>
+			<div>
+				<button onClick={clickMenu} className={"toggle " + props.navState}>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
 
-			<ul>
-				<li>
-					<a href="#skills" onClick={closeMenu}>
-						Skills
-					</a>
-				</li>
-				<li>
-					<a href="#projects" onClick={closeMenu}>
-						Projects
-					</a>
-				</li>
-				<li className="contact">
-					<a href="#contact" onClick={closeMenu}>
-						Contact me
-					</a>
-				</li>
-			</ul>
+				<ul>
+					<li>
+						<a href="#skills" onClick={closeMenu}>
+							Skills
+						</a>
+					</li>
+					<li>
+						<a href="#projects" onClick={closeMenu}>
+							Projects
+						</a>
+					</li>
+					<li className="contact">
+						<a href="#contact" onClick={closeMenu}>
+							Contact me
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	);
 }

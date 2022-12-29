@@ -3,6 +3,12 @@
 	justify-content: right;
 	padding: 2rem 2rem;
 	margin-bottom: 2rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-logo {
+	width: 5.5rem;
 }
 
 .toggle {
