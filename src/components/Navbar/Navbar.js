@@ -41,6 +41,10 @@ function Navbar(props) {
 							Contact me
 						</a>
 					</li>
+
+					<li>
+						<a href="alyssa-sitto-resume.pdf">Resume</a>
+					</li>
 				</ul>
 			</div>
 		</div>

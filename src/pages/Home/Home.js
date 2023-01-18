@@ -26,8 +26,6 @@ function Home() {
 									.typeString("Hello, I'm Alyssa")
 									.pauseFor(1000)
 									.deleteAll()
-									.typeString("I make things for the web")
-									.pauseFor(1000)
 									.start();
 							}}
 						/>
@@ -35,8 +33,8 @@ function Home() {
 
 					<p>
 						I'm an aspiring web developer from southern California with a
-						passion for coding. I turn my ideas into user-friendly and
-						aesthetically pleasing web applications.
+						passion for coding. I turn my ideas into modern, immersive, and
+						responsive applications for the web.
 					</p>
 				</div>
 
@@ -44,7 +42,6 @@ function Home() {
 			</header>
 
 			<Skills />
-
 			<Projects />
 
 			<ContactCard />
