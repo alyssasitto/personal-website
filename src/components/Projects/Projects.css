@@ -1,86 +1,180 @@
+#projects {
+	padding: 0 3rem;
+	margin-bottom: 4rem;
+}
+
+#projects h2 {
+	color: var(--red);
+	margin-bottom: 4rem;
+}
+
 .projects-container {
-	margin-bottom: 6rem;
-}
-
-.projects-container h1 {
-	text-align: center;
-	margin-bottom: 8rem;
-}
-
-.projects {
 	display: flex;
 	flex-direction: column;
-	gap: 10rem;
+	gap: 4rem;
 }
 
 .project-card {
-	position: relative;
-	margin: 0 2rem;
+	background-color: var(--dark-green-blue);
 	padding: 2rem;
-	background-color: #f8f8f8;
-	border-radius: 8px;
-	box-shadow: rgba(100, 100, 111, 0.526) 0px 7px 29px 0px;
-	transition: all 0.2s;
+	max-height: 20rem;
+	border-radius: 3px;
+	position: relative;
+	transition: max-height 0.8s ease;
+	overflow: hidden;
 }
 
-.project-card:hover {
-	transform: translateY(-5px);
-}
-
-.project-card img {
-	border-radius: 5px;
-	margin-bottom: 1rem;
+.project-card::before {
+	content: "";
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(to top, #000000 10%, transparent 80%);
 	position: absolute;
+	top: 0;
 	left: 0;
-	left: 50%;
-	width: 25rem;
-	transform: translate(-50%, -60%);
 }
 
-.project-card h2 {
-	margin-bottom: 1rem;
-	margin-top: 7rem;
+.project-card.active {
+	max-height: 100rem;
+}
+
+.project-card.active::before {
+	content: none;
+}
+
+.project-card h3 {
+	font-weight: 600;
+}
+
+.project-card .card-heading {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+	align-items: center;
 }
 
 .project-card p {
-	opacity: 0.7;
-	margin-bottom: 2.5rem;
+	margin-bottom: 2rem;
 }
 
-.project-card a {
-	color: #fff;
-	background-color: #9450ff;
-	font-size: 2rem;
-	font-weight: bold;
-	padding: 1rem;
-	border-radius: 5px;
-	text-decoration: none;
-	box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.318);
+.project-card p img {
+	width: 1.5rem;
+	margin-bottom: -0.1rem;
+	margin-right: 0.6rem;
 }
 
-.project-card a:hover {
-	background: linear-gradient(#9450ff, #52298f);
+.project-card div img {
+	width: 2.5rem;
 }
 
-@media screen and (min-width: 700px) {
-	.project-card {
-		width: 70%;
-		margin: auto;
-		text-align: center;
-	}
+.project-card .buttons {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	margin-bottom: 2rem;
+}
+
+.project-card div img.img-helper {
+	width: 2.2rem;
+}
+
+.rm-rl-btns {
+	position: absolute;
+	bottom: 1rem;
+}
+
+.rm-rl-btns button {
+	color: var(--red);
+	font-size: 1.6rem;
+}
+
+.rm-rl-btns button p {
+	margin-bottom: 0;
+}
+
+.rm-rl-btns button img {
+	width: 2rem;
+	margin-top: 0.2rem;
+}
+
+.read-more,
+.read-less {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.read-less,
+.project-card.active .read-more {
+	display: none;
+}
+
+.project-card.active .read-less {
+	display: flex;
+}
+
+.proj-link {
+	position: relative;
+	z-index: 2;
 }
 
 @media screen and (min-width: 1000px) {
-	.projects-container h1 {
-		font-size: 4rem;
-	}
-
-	.projects {
-		flex-direction: row;
-		padding: 0 2rem;
-	}
-
 	.project-card {
-		height: 40vh;
+		max-height: fit-content;
+		width: 50%;
+		overflow: visible;
+	}
+
+	.project-card::before {
+		content: none;
+	}
+
+	.rm-rl-btns button {
+		display: none;
+	}
+
+	.spotify-proj::before {
+		content: "";
+		background-image: url(/public/images/spotify-app.png);
+		background-size: cover;
+		position: absolute;
+		right: 0;
+		left: 103%;
+		height: 30rem;
+		width: 100%;
+		z-index: -1;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.nutrition-proj {
+		align-self: flex-end;
+		margin-left: 2rem;
+	}
+
+	.nutrition-proj::after {
+		content: "";
+		background-image: url(/public/images/nutrition-app.png);
+		background-size: cover;
+		position: absolute;
+		height: 30rem;
+		width: 100%;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -103%;
+	}
+
+	.game-proj::before {
+		content: "";
+		background-image: url(/public/images/game-app.png);
+		background-size: cover;
+		position: absolute;
+		right: 0;
+		left: 103%;
+		height: 30rem;
+		width: 100%;
+		z-index: -1;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 }

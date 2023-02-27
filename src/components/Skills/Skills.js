@@ -3,12 +3,12 @@ require("./Skills.css");
 function Skills() {
 	return (
 		<section id="skills" className="skills-container">
-			<h1>Skills</h1>
+			<h2>Skills</h2>
 
 			<div className="skills">
 				<div>
 					<img src="images/react-logo.png" className="logo"></img>
-					<h2>React</h2>
+					<p>React</p>
 				</div>
 
 				<div>
@@ -16,7 +16,7 @@ function Skills() {
 						src="images/mongodb-logo.png"
 						className="logo mongo-helper"
 					></img>
-					<h2>MongoDB</h2>
+					<p>MongoDB</p>
 				</div>
 
 				<div>
@@ -24,17 +24,17 @@ function Skills() {
 						src="images/nodejs-logo.png"
 						className="logo logo-helper-smaller"
 					></img>
-					<h2>NodeJS</h2>
+					<p>NodeJS</p>
 				</div>
 
 				<div>
 					<img src="images/html-logo.png" className="logo"></img>
-					<h2>HTML5</h2>
+					<p>HTML5</p>
 				</div>
 
 				<div>
 					<img src="images/css-logo.png" className="logo"></img>
-					<h2>CSS</h2>
+					<p>CSS3</p>
 				</div>
 
 				<div>
@@ -42,7 +42,7 @@ function Skills() {
 						src="images/js-logo.png"
 						className="logo logo-helper-smaller"
 					></img>
-					<h2>JavaScript</h2>
+					<p>JavaScript</p>
 				</div>
 			</div>
 		</section>

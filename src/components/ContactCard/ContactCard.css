@@ -1,65 +1,103 @@
-.contact-card {
-	height: 30rem;
-	margin-bottom: 3rem;
-	padding: 2rem;
-	text-align: center;
-	color: #fff;
-	background: linear-gradient(#9450ff, #451d81, #2b1946);
+#contact {
+	padding: 3rem;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
+	margin-bottom: 5rem;
+	border-radius: 3px;
+	background-color: var(--dark-green-blue);
 }
 
-.contact-card h2 {
-	font-size: 3.5rem;
+#contact h2 {
+	margin-bottom: 2rem;
+	color: var(--red);
+}
+
+#contact div {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+
+#contact label {
+	font-size: 1.8rem;
+	color: var(--light-blue);
 	margin-bottom: 1rem;
 }
 
-.contact-card p {
-	color: #d4b9ff;
-	font-size: 1.8rem;
+#contact input,
+#contact textarea {
 	margin-bottom: 2rem;
-}
-
-.contact-btn {
-	display: block;
-	text-decoration: none;
-	font-size: 2.5rem;
-	font-weight: bold;
-	color: #fff;
-	background-color: #140826;
+	background-color: #1a3d47;
+	border: none;
 	padding: 1rem;
-	border-radius: 8px;
-	width: fit-content;
-	margin-left: auto;
-	margin-right: auto;
-	border: 2px solid transparent;
+	border-radius: 2px;
+	font-size: 1.6rem;
+	color: var(--white-blue);
+	font-family: "Inter", sans-serif;
+	border: 1px solid transparent;
 }
 
-.contact-btn:hover {
-	background-color: transparent;
-	border: 2px solid #9450ff;
+#contact input::placeholder,
+#contact textarea::placeholder {
+	color: var(--light-blue);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+	outline: none;
+	border: 1px solid var(--red);
+}
+
+#contact button {
+	color: var(--red);
+	font-size: 2rem;
+	border: 1px solid var(--red);
+	width: 80%;
+	margin-top: 1.5rem;
+	padding: 1rem;
+	border-radius: 2px;
+	transition: all 0.2s;
+}
+
+#contact button:hover {
+	background-color: #ea4a4a2a;
+}
+
+.input-container {
+	width: 80%;
+}
+
+.input-icon {
+	width: 2rem;
+	position: absolute;
+	z-index: 1;
+}
+
+.err-msg {
+	color: var(--red);
 }
 
 @media screen and (min-width: 700px) {
-	.contact-card p {
-		padding: 0 4rem;
+	#contact div,
+	#contact button {
+		width: 70%;
 	}
 }
 
 @media screen and (min-width: 1000px) {
-	.contact-card h2 {
-		font-size: 4rem;
+	#contact {
+		width: 70%;
+		margin: auto;
+		background-color: transparent;
+	}
+	#contact input,
+	#contact textarea {
+		padding: 1.5rem 1rem;
 	}
 
-	.contact-card p {
-		width: 45vw;
-		font-size: 2rem;
-	}
-
-	.contact-btn {
-		font-size: 2, 5rem;
-		padding: 1.5rem;
+	#contact button {
+		padding: 1.5rem 0;
 	}
 }

@@ -7,8 +7,24 @@
 	justify-content: space-between;
 }
 
+.navbar button {
+	scale: 0.9;
+}
+
 .nav-logo {
-	width: 5.5rem;
+	width: 5rem;
+	height: 5rem;
+	border: 3px solid var(--red);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	border-radius: 50%;
+}
+
+.nav-logo p {
+	font-size: 2rem;
+	color: var(--red);
 }
 
 .toggle {
@@ -28,7 +44,7 @@
 	position: absolute;
 	width: 40px;
 	height: 4px;
-	background-color: #9450ff;
+	background-color: var(--red);
 	transition: 0.5s;
 	border-radius: 4px;
 }
@@ -61,9 +77,10 @@
 
 .navbar ul {
 	position: absolute;
+	overflow-x: hidden;
 	list-style: none;
-	background-color: #140826;
-	right: 0;
+	background-color: var(--green-blue);
+	right: 0px;
 	z-index: 2;
 	top: 0;
 	width: 0px;
@@ -75,6 +92,7 @@
 	flex-direction: column;
 	gap: 3rem;
 	padding: 10rem 0 0 0;
+	white-space: nowrap;
 }
 
 .navbar.active ul {
@@ -82,16 +100,16 @@
 }
 
 .navbar ul li a {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	color: #fff;
-	font-weight: bold;
+	font-weight: 600;
 	padding-left: 3rem;
 	text-decoration: none;
 	transition: all 0.2s;
 }
 
 .navbar ul li a:hover {
-	color: #9450ff;
+	color: var(--red);
 }
 
 @media screen and (min-width: 1000px) {
@@ -105,13 +123,28 @@
 		background-color: transparent;
 		padding: 0 3rem 0 0;
 		flex-direction: row;
+		gap: 6rem;
+		align-items: center;
 	}
 
 	.navbar ul li a {
-		color: black;
-		border-right: 2px solid #9450ff;
-		padding-right: 3rem;
+		color: var(--light-blue);
+		font-weight: 600;
+		font-size: 2.2rem;
 		padding-left: 0;
 		transition: all 0.2s;
+	}
+
+	.resume-btn-nav {
+		border: 1px solid var(--red);
+		padding: 1rem 2rem;
+		border-radius: 2px;
+	}
+
+	.resume-btn-nav:hover {
+		background-color: #ea4a4a2a;
+	}
+	.resume-btn-nav a {
+		color: var(--red) !important;
 	}
 }

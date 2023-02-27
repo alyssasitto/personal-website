@@ -4,8 +4,7 @@ import Skills from "../../components/Skills/Skills";
 import Projects from "../../components/Projects/Projects";
 import ContactCard from "../../components/ContactCard/ContactCard";
 import Navbar from "../../components/Navbar/Navbar";
-
-import Typewriter from "typewriter-effect";
+import AboutMe from "../../components/AboutMe/AboutMe";
 
 require("./Home.css");
 
@@ -18,28 +17,22 @@ function Home() {
 			<header>
 				<div className="header-content">
 					<h1 className="heading">
-						<Typewriter
-							options={{ loop: true }}
-							onInit={(typewriter) => {
-								typewriter
-
-									.typeString("Hello, I'm Alyssa")
-									.pauseFor(1000)
-									.deleteAll()
-									.start();
-							}}
-						/>
+						<span className="red">Hello, my name is</span> <br /> Alyssa Sitto.{" "}
+						<br />
+						<span className="blue">I enjoy building things for the web.</span>
 					</h1>
 
 					<p>
-						I'm an aspiring web developer from southern California with a
-						passion for coding. I turn my ideas into modern, immersive, and
-						responsive applications for the web.
+						I'm a frontend-focused web developer based in Southern California
+						with a passion for creating aesthetically pleasing and user-friendly
+						websites.
 					</p>
 				</div>
 
-				<img src="images/hero.png" className="hero"></img>
+				<button className="resume-btn">Resume</button>
 			</header>
+
+			<AboutMe />
 
 			<Skills />
 			<Projects />
@@ -49,13 +42,13 @@ function Home() {
 			<footer>
 				<div className="socials">
 					<a href="https://github.com/alyssasitto">
-						<img src="images/github-logo.png" className="social"></img>
+						<img src="images/github.svg" className="social"></img>
 					</a>
 					<a href="https://www.linkedin.com/in/alyssasitto">
-						<img src="images/linkedin-logo.png" className="social"></img>
+						<img src="images/linkedin.svg" className="social"></img>
 					</a>
 					<a href="mailto:alyssasitto1@gmail.com">
-						<img src="images/email-logo.png" className="social"></img>
+						<img src="images/envelope.svg" className="social"></img>
 					</a>
 				</div>
 				<small>Designed and Built by Alyssa Sitto</small>

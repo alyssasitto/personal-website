@@ -1,14 +1,17 @@
 .skills-container {
-	color: #fff;
-	background-color: #140826;
+	color: var(--light-blue);
+	/* background-color: var(--dark-green-blue); */
 	padding: 3rem 0 4rem 0;
 	margin-bottom: 4rem;
+	background-image: url("/public/images/waves.svg");
+	background-size: cover;
+	background-position: bottom;
 }
 
-.skills-container h1 {
+.skills-container h2 {
 	text-align: center;
 	margin-bottom: 3rem;
-	font-size: 3rem;
+	color: var(--red);
 }
 
 .skills {
@@ -24,21 +27,22 @@
 	align-items: center;
 }
 
-.skills h2 {
-	font-size: 1.7rem;
+.skills p {
+	font-size: 1.6rem;
 	margin-top: 1rem;
+	font-weight: bold;
 }
 
 .logo {
-	width: 6rem;
-}
-
-.logo-helper-smaller {
 	width: 5rem;
 }
 
+.logo-helper-smaller {
+	width: 4.3rem;
+}
+
 .mongo-helper {
-	width: 4rem;
+	width: 3.5rem;
 }
 
 @media screen and (min-width: 1000px) {

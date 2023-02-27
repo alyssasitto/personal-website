@@ -17,7 +17,9 @@ function Navbar(props) {
 
 	return (
 		<div className={"navbar " + props.navState}>
-			<img src="images/nav-logo.png" className="nav-logo"></img>
+			<div className="nav-logo">
+				<p>AS</p>
+			</div>
 			<div>
 				<button onClick={clickMenu} className={"toggle " + props.navState}>
 					<span></span>
@@ -42,7 +44,7 @@ function Navbar(props) {
 						</a>
 					</li>
 
-					<li>
+					<li className="resume-btn-nav">
 						<a href="alyssa-sitto-resume.pdf">Resume</a>
 					</li>
 				</ul>
