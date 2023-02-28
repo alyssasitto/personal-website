@@ -29,7 +29,9 @@ function Home() {
 					</p>
 				</div>
 
-				<button className="resume-btn">Resume</button>
+				<button className="resume-btn">
+					<a href="alyssa-sitto-resume.pdf">Resume</a>
+				</button>
 			</header>
 
 			<AboutMe />

@@ -101,6 +101,10 @@ footer {
 	transition: all 0.3s;
 }
 
+.resume-btn a {
+	color: var(--red);
+}
+
 .resume-btn:hover {
 	background-color: #ea4a4a2a;
 }

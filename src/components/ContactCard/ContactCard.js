@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 import axios from "axios";
-import { setCommentRange } from "typescript";
 
 require("./ContactCard.css");
 
 function ContactCard() {
 	const API_URL = process.env.REACT_APP_API_URL;
+
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
