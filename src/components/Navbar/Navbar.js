@@ -45,7 +45,9 @@ function Navbar(props) {
 					</li>
 
 					<li className="resume-btn-nav">
-						<a href="alyssa-sitto-resume.pdf">Resume</a>
+						<a href="https://1drv.ms/w/s!Ai9wUWsSlzZ1hzz4A7Ir7cFf93OL?e=qTRAKp">
+							Resume
+						</a>
 					</li>
 				</ul>
 			</div>

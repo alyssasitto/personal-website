@@ -101,7 +101,7 @@
 
 .navbar ul li a {
 	font-size: 2rem;
-	color: #fff;
+	color: var(--white-blue);
 	font-weight: 600;
 	padding-left: 3rem;
 	text-decoration: none;

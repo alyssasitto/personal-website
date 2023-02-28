@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 import Skills from "../../components/Skills/Skills";
 import Projects from "../../components/Projects/Projects";
@@ -30,7 +31,9 @@ function Home() {
 				</div>
 
 				<button className="resume-btn">
-					<a href="alyssa-sitto-resume.pdf">Resume</a>
+					<a href="https://1drv.ms/w/s!Ai9wUWsSlzZ1hzz4A7Ir7cFf93OL?e=qTRAKp">
+						Resume
+					</a>
 				</button>
 			</header>
 
