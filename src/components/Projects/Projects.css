@@ -1,6 +1,11 @@
 #projects {
 	padding: 0 3rem;
-	margin-bottom: 4rem;
+	margin-bottom: 10rem;
+	opacity: 0;
+}
+
+#project.fade-in {
+	animation-delay: 200ms;
 }
 
 #projects h2 {
@@ -22,6 +27,7 @@
 	position: relative;
 	transition: max-height 0.8s ease;
 	overflow: hidden;
+	opacity: 0;
 }
 
 .project-card::before {
@@ -40,6 +46,18 @@
 
 .project-card.active::before {
 	content: none;
+}
+
+.spotify-proj.fade-in {
+	animation-delay: 300ms;
+}
+
+.nutrition-proj.fade-in {
+	animation-delay: 400ms;
+}
+
+.nutrition-proj.fade-in {
+	animation-delay: 500ms;
 }
 
 .project-card h3 {
@@ -116,6 +134,20 @@
 .proj-link {
 	position: relative;
 	z-index: 2;
+}
+
+@media screen and (min-width: 700px) {
+	#projects {
+		padding: 0 5rem;
+	}
+
+	#projects h2 {
+		font-size: 3rem;
+	}
+
+	.project-card {
+		max-height: 25rem;
+	}
 }
 
 @media screen and (min-width: 1000px) {

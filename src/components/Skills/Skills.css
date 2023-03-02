@@ -1,11 +1,14 @@
 .skills-container {
 	color: var(--light-blue);
-	/* background-color: var(--dark-green-blue); */
 	padding: 3rem 0 4rem 0;
-	margin-bottom: 4rem;
-	background-image: url("/public/images/waves.svg");
+	margin-bottom: 10rem;
 	background-size: cover;
 	background-position: bottom;
+	opacity: 0;
+}
+
+.skills-container.fade-in {
+	animation-delay: 100ms;
 }
 
 .skills-container h2 {
@@ -15,16 +18,43 @@
 }
 
 .skills {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 2rem;
-}
-
-.skills div {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	gap: 3rem;
+	padding: 0 6rem;
+}
+
+.skills .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 5rem;
+}
+
+.skills .container:first-child {
+	transform: translateX(-100%);
+	transition: all 1.5s;
+}
+
+.skills .container:first-child.slide {
+	transform: translateX(0);
+}
+
+.skills .container:last-child {
+	transform: translateX(100%);
+	transition: all 1.5s;
+}
+
+.skills .container:last-child.slide {
+	transform: translateX(0);
+}
+
+.skills .container div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	align-self: flex-end;
 }
 
 .skills p {
@@ -45,10 +75,42 @@
 	width: 3.5rem;
 }
 
+@media screen and (min-width: 700px) {
+	.skills-container h2 {
+		font-size: 3rem;
+		margin-bottom: 4rem;
+	}
+
+	.skills {
+		gap: 5rem;
+	}
+
+	.skills p {
+		font-size: 2rem;
+	}
+
+	.skills .container {
+		gap: 10rem;
+	}
+
+	.logo {
+		width: 6rem;
+	}
+
+	.logo-helper-smaller {
+		width: 5.3rem;
+	}
+
+	.mongo-helper {
+		width: 4.3rem;
+	}
+}
+
 @media screen and (min-width: 1000px) {
 	.skills {
-		display: flex;
-		justify-content: space-around;
+		flex-direction: row;
+		justify-content: center;
+		gap: 10rem;
 	}
 
 	.skills-container h1 {
@@ -58,4 +120,17 @@
 	.skills h2 {
 		font-size: 2rem;
 	}
+
+	.skills .container {
+	}
 }
+
+/* @media screen and (min-width: 1200px) {
+	.skills {
+		gap: 10rem;
+	}
+
+	.skills .container {
+		gap: 10rem;
+	}
+} */

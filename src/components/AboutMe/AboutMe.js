@@ -1,8 +1,20 @@
+import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+
 require("./AboutMe.css");
 
 const AboutMe = () => {
+	const [ref, refInView] = useInView({ threshold: 0.3 });
+	const [inView, setInView] = useState("");
+
+	useEffect(() => {
+		if (refInView) {
+			setInView("fade-in");
+		}
+	});
+
 	return (
-		<section id="about-me">
+		<section ref={ref} id="about-me" className={inView}>
 			<img
 				src="images/me.png"
 				alt="Picture of Alyssa Sitto. She has straight bright red hair and is wearing a black shirt."

@@ -1,7 +1,7 @@
 .navbar {
 	display: flex;
 	justify-content: right;
-	padding: 2rem 2rem;
+	padding: 2rem 2rem 4rem;
 	margin-bottom: 2rem;
 	align-items: center;
 	justify-content: space-between;
@@ -112,6 +112,12 @@
 	color: var(--red);
 }
 
+@media screen and (min-width: 700px) {
+	.navbar {
+		padding: 2rem 5rem 4rem;
+	}
+}
+
 @media screen and (min-width: 1000px) {
 	.toggle {
 		display: none;
@@ -148,4 +154,24 @@
 	.resume-btn-nav a {
 		color: var(--red) !important;
 	}
+}
+
+@media screen and (min-width: 1200px) {
+	.navbar {
+		padding: 2rem 0 4rem;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.navbar .fade-in {
+	animation: fadeIn 1s;
 }

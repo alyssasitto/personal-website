@@ -1,7 +1,8 @@
 #about-me {
 	text-align: center;
 	padding: 0 3rem;
-	padding-bottom: 4rem;
+	opacity: 0;
+	margin-bottom: 10rem;
 }
 
 #about-me img {
@@ -19,6 +20,26 @@
 	text-align: left;
 }
 
+#about-me.fade-in {
+	animation-delay: 200ms;
+}
+
+@media screen and (min-width: 700px) {
+	#about-me {
+		padding: 0 5rem;
+		margin-bottom: 10rem;
+	}
+
+	#about-me h2 {
+		font-size: 2.5rem;
+	}
+
+	#about-me img {
+		width: 25rem;
+		margin-bottom: 3rem;
+	}
+}
+
 @media screen and (min-width: 1000px) {
 	#about-me {
 		display: flex;
@@ -31,7 +52,12 @@
 		width: 30%;
 	}
 
+	#about-me h2 {
+		font-size: 2.8rem;
+	}
+
 	#about-me p {
 		line-height: 1.8;
+		font-size: 1.7rem;
 	}
 }

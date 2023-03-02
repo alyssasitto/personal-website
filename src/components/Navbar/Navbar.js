@@ -16,7 +16,7 @@ function Navbar(props) {
 	};
 
 	return (
-		<div className={"navbar " + props.navState}>
+		<nav className={"navbar " + props.navState}>
 			<div className="nav-logo">
 				<p>AS</p>
 			</div>
@@ -51,7 +51,7 @@ function Navbar(props) {
 					</li>
 				</ul>
 			</div>
-		</div>
+		</nav>
 	);
 }
 

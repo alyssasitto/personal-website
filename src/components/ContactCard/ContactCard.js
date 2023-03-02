@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 import axios from "axios";
 
@@ -7,6 +8,8 @@ require("./ContactCard.css");
 function ContactCard() {
 	const API_URL = process.env.REACT_APP_API_URL;
 
+	const [ref, refInView] = useInView({ threshold: 0 });
+	const [inView, setInView] = useState("");
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
@@ -50,8 +53,19 @@ function ContactCard() {
 			});
 	};
 
+	useEffect(() => {
+		if (refInView) {
+			setInView("fade-in");
+		}
+	}, [refInView]);
+
 	return (
-		<form onSubmit={handleSubmit} id="contact" className="contact-form">
+		<form
+			ref={ref}
+			onSubmit={handleSubmit}
+			id="contact"
+			className={"contact-form " + inView}
+		>
 			<h2>Contact me</h2>
 
 			<div>

@@ -1,8 +1,18 @@
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 require("./Projects.css");
 
 function Projects() {
+	const [ref, refInView] = useInView({ threshold: 0.1 });
+	const [inView, setInView] = useState("");
+
+	useEffect(() => {
+		if (refInView) {
+			setInView("fade-in");
+		}
+	}, [refInView]);
+
 	const readMore = (e) => {
 		e.target.parentElement.parentElement.parentElement.classList.add("active");
 	};
@@ -14,10 +24,10 @@ function Projects() {
 	};
 
 	return (
-		<div id="projects">
+		<div ref={ref} id="projects" className={inView}>
 			<h2>Featured Projects</h2>
 			<div className="projects-container">
-				<section className="project-card spotify-proj">
+				<section className={"project-card spotify-proj " + inView}>
 					<div className="card-heading">
 						<h3>Spotify Clone</h3>
 						<a
@@ -73,7 +83,7 @@ function Projects() {
 					</div>
 				</section>
 
-				<section className="project-card nutrition-proj">
+				<section className={"project-card nutrition-proj " + inView}>
 					<div className="card-heading">
 						<h3>Healthy Living</h3>
 						<a className="proj-link" href="https://healthy-living2.netlify.app">
@@ -124,7 +134,7 @@ function Projects() {
 					</div>
 				</section>
 
-				<section className="project-card game-proj">
+				<section className={"project-card game-proj " + inView}>
 					<div className="card-heading">
 						<h3>Cat Fishing</h3>
 						<a

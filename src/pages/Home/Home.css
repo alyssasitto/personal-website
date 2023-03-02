@@ -19,39 +19,81 @@
 
 .home-page header {
 	text-align: left;
-	margin-bottom: 4rem;
 	padding: 0 3rem;
+	height: 80vh;
+}
+
+header h1 {
+	color: var(--red);
+	font-weight: normal;
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+	opacity: 0;
+}
+
+header h1.fade-in {
+	animation-delay: 100ms;
+}
+
+header h2 {
+	color: var(--white-blue);
+	font-size: 3.5rem;
+	opacity: 0;
+}
+
+header h2.fade-in {
+	animation-delay: 200ms;
+}
+
+header h3 {
+	font-size: 3.5rem;
+	margin-bottom: 1rem;
+	opacity: 0;
+}
+
+header h3.fade-in {
+	animation-delay: 300ms;
+}
+
+.header-container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-60%);
 }
 
 .home-page header p {
 	line-height: 1.4;
 	margin-bottom: 2rem;
 	opacity: 0.7;
-	font-size: 1.8rem;
+	margin-bottom: 2.5rem;
+	opacity: 0;
 }
 
-.heading {
-	font-size: 3.5rem;
-	margin-bottom: 1rem;
-	font-weight: 700;
-	color: var(--white-blue);
+.home-page header p.fade-in {
+	animation-delay: 400ms;
 }
 
-.heading span.red {
+.resume-btn {
+	font-size: 2.5rem;
 	color: var(--red);
-	font-weight: normal;
-	font-size: 1.9rem;
+	background-color: transparent;
+	border: 1px solid var(--red);
+	padding: 1rem 2rem;
+	border-radius: 2px;
+	transition: all 0.3s;
+	opacity: 0;
 }
 
-.heading span.blue {
-	color: var(--light-blue);
+.resume-btn.fade-in {
+	animation-delay: 500ms;
 }
 
-.hero {
-	width: 40rem;
-	position: relative;
-	left: 50%;
-	transform: translate(-50%);
+.resume-btn a {
+	color: var(--red);
+}
+
+.resume-btn:hover {
+	background-color: #ea4a4a2a;
 }
 
 footer {
@@ -91,34 +133,61 @@ footer {
 	width: 2.5rem;
 }
 
-.resume-btn {
-	font-size: 2.5rem;
-	color: var(--red);
-	background-color: transparent;
-	border: 1px solid var(--red);
-	padding: 1rem 2rem;
-	border-radius: 2px;
-	transition: all 0.3s;
+@media screen and (min-width: 700px) {
+	.home-page header {
+		padding: 0 15rem 0 5rem;
+	}
+
+	header h2,
+	header h3 {
+		font-size: 5rem;
+	}
+
+	.header-content p {
+		font-size: 1.7rem;
+	}
 }
 
-.resume-btn a {
-	color: var(--red);
+@media screen and (min-width: 900px) {
+	.home-page header {
+		padding-right: 25rem;
+	}
 }
 
-.resume-btn:hover {
-	background-color: #ea4a4a2a;
-}
-
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
 	.home-page {
 		padding: 0 15rem;
 	}
 
 	.home-page header {
 		width: 60%;
+		padding: 0;
 	}
 
 	.heading {
 		font-size: 4.5rem;
 	}
+
+	header h1 {
+		font-size: 2rem;
+	}
+
+	header h2,
+	header h3 {
+		font-size: 6rem;
+	}
+
+	.header-content p {
+		font-size: 2rem;
+	}
+}
+
+@keyframes fadeIn {
+	100% {
+		opacity: 1;
+	}
+}
+
+.fade-in {
+	animation: fadeIn 3s forwards;
 }
