@@ -29,7 +29,7 @@ function Home() {
 					</div>
 
 					<button className="resume-btn fade-in">
-						<a href="https://1drv.ms/w/s!Ai9wUWsSlzZ1hzz4A7Ir7cFf93OL?e=qTRAKp">
+						<a href="https://1drv.ms/w/s!Ai9wUWsSlzZ1hzz4A7Ir7cFf93OL?e=2wYsqH">
 							Resume
 						</a>
 					</button>
