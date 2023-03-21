@@ -1,0 +1,36 @@
+footer {
+	text-align: center;
+	padding-bottom: 1.5rem;
+}
+
+.socials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	margin-bottom: 1.5rem;
+}
+
+.socials a {
+	position: relative;
+	transition: all 0.2s ease;
+}
+
+.socials a::before {
+	content: "";
+	height: 3px;
+	width: 0px;
+	background-color: var(--red);
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.2s;
+}
+
+.socials a:hover:before {
+	width: 100%;
+}
+
+.social {
+	width: 2.5rem;
+}

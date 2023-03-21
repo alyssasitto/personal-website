@@ -1,0 +1,152 @@
+nav {
+	display: flex;
+	justify-content: right;
+	margin-bottom: 2rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav button {
+	scale: 0.9;
+}
+
+.nav-logo {
+	width: 5rem;
+	height: 5rem;
+	border: 3px solid var(--red);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	border-radius: 50%;
+}
+
+.nav-logo p {
+	font-size: 2rem;
+	color: var(--red);
+}
+
+nav button {
+	position: relative;
+	z-index: 3;
+	width: 70px;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background-color: transparent;
+	border: none;
+}
+
+nav button span {
+	position: absolute;
+	width: 40px;
+	height: 4px;
+	background-color: var(--red);
+	transition: 0.5s;
+	border-radius: 4px;
+}
+
+nav button span:nth-child(1) {
+	transform: translateY(-15px);
+	width: 25px;
+	left: 15px;
+}
+
+nav button.active span:nth-child(1) {
+	width: 40px;
+	transform: translateY(0px) rotate(45deg);
+}
+
+nav button span:nth-child(2) {
+	transform: translateY(15px);
+	width: 25px;
+	left: 15px;
+}
+
+nav button.active span:nth-child(2) {
+	width: 40px;
+	transform: translateY(0px) rotate(315deg);
+}
+
+nav button.active span:nth-child(3) {
+	transform: translateX(60px);
+}
+
+nav ul {
+	position: absolute;
+	overflow-x: hidden;
+	list-style: none;
+	background-color: var(--green-blue);
+	right: 0px;
+	z-index: 2;
+	top: 0;
+	width: 0px;
+	height: 100%;
+	bottom: 0;
+	overflow: hidden;
+	transition: width 0.2s ease-in;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	padding: 10rem 0 0 0;
+	white-space: nowrap;
+}
+
+nav.active ul {
+	width: 23rem;
+}
+
+nav ul li a {
+	font-size: 2rem;
+	color: var(--white-blue);
+	font-weight: 600;
+	padding-left: 3rem;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+nav ul li a:hover {
+	color: var(--red);
+}
+
+nav .resume-btn {
+	width: fit-content;
+	margin-left: 3rem;
+}
+
+nav .resume-btn a {
+	padding-left: 0;
+}
+
+@media screen and (min-width: 1000px) {
+	nav {
+		margin-bottom: 7rem;
+	}
+
+	nav button {
+		display: none;
+	}
+
+	nav ul {
+		position: relative;
+		width: fit-content;
+		background-color: transparent;
+		padding: 0 3rem 0 0;
+		flex-direction: row;
+		gap: 6rem;
+		align-items: center;
+	}
+
+	nav ul li a {
+		color: var(--light-blue);
+		font-weight: 600;
+		font-size: 2.2rem;
+		transition: all 0.2s;
+	}
+
+	nav .resume-btn {
+		margin-left: 0rem;
+	}
+}

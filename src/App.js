@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+
+import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
+import ContactCard from "./components/ContactCard/ContactCard";
+import Footer from "./components/Footer/Footer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [navState, setNavState] = useState(false);
+	return (
+		<div className={`app ${navState ? "active" : ""}`}>
+			<Navbar navState={navState} setNavState={setNavState} />
+			<Header />
+			<AboutMe />
+			<Skills />
+			<Projects />
+			<ContactCard />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;

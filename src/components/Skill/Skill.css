@@ -1,0 +1,29 @@
+.skill {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.skill img {
+	width: 5rem;
+}
+
+.skill h3 {
+	margin-top: 2rem;
+}
+
+.mongodb img {
+	width: 4rem;
+}
+
+.mysql img {
+	width: 8rem;
+}
+
+.html5 img {
+	width: 5.4rem;
+}
+
+.css3 img {
+	width: 5.5rem;
+}
