@@ -25,7 +25,7 @@ const Navbar = ({ navState, setNavState }) => {
 				</button>
 
 				<ul>
-					<li>
+					<li style={{ transitionDelay: "2ms" }}>
 						<a href="#skills" onClick={closeMenu}>
 							Skills
 						</a>

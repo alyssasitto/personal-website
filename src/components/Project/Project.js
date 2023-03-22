@@ -1,6 +1,13 @@
+import { useEffect, useState } from "react";
+import { useIntersectionObserver } from "react-intersection-observer-hook";
+
 require("./Project.css");
 
 const Project = ({ project, index }) => {
+	const [ref, { entry }] = useIntersectionObserver();
+	const isVisible = entry && entry.isIntersecting;
+	const [inView, setInView] = useState("");
+
 	const readMore = (e) => {
 		e.target.parentElement.parentElement.parentElement.classList.add("active");
 	};
@@ -11,9 +18,16 @@ const Project = ({ project, index }) => {
 		);
 	};
 
+	useEffect(() => {
+		if (isVisible) {
+			setInView("fade-in");
+		}
+	}, [isVisible]);
+
 	return (
 		<div
-			className={`card-container " ${
+			ref={ref}
+			className={`card-container ${inView} ${
 				index === 1 || index === 3 ? "rr-helper" : ""
 			}`}
 		>

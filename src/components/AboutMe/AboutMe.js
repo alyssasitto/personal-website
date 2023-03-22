@@ -1,8 +1,21 @@
+import { useEffect, useState } from "react";
+import { useIntersectionObserver } from "react-intersection-observer-hook";
+
 require("./AboutMe.css");
 
 const AboutMe = () => {
+	const [ref, { entry }] = useIntersectionObserver({ threshold: 0.3 });
+	const isVisible = entry && entry.isIntersecting;
+	const [inView, setInView] = useState("");
+
+	useEffect(() => {
+		if (isVisible) {
+			setInView("fade-in");
+		}
+	}, [isVisible]);
+
 	return (
-		<section id="about-me" className="padding-helper">
+		<section ref={ref} id="about-me" className={`padding-helper ${inView}`}>
 			<img
 				src="images/me.png"
 				alt="Picture of Alyssa Sitto. She has straight bright red hair and is wearing a black shirt."

@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useIntersectionObserver } from "react-intersection-observer-hook";
 
 import axios from "axios";
 
@@ -6,6 +7,10 @@ require("./ContactCard.css");
 
 const ContactCard = () => {
 	const API_URL = process.env.REACT_APP_API_URL;
+
+	const [ref, { entry }] = useIntersectionObserver({ threshold: 0.5 });
+	const isVisible = entry && entry.isIntersecting;
+	const [inView, setInView] = useState("");
 
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
@@ -49,8 +54,20 @@ const ContactCard = () => {
 				setErrMessage(err.response.data.err);
 			});
 	};
+
+	useEffect(() => {
+		if (isVisible) {
+			setInView("fade-in");
+		}
+	}, [isVisible]);
+
 	return (
-		<form onSubmit={handleSubmit} id="contact" className={"contact-form "}>
+		<form
+			ref={ref}
+			onSubmit={handleSubmit}
+			id="contact"
+			className={`contact-form ${inView}`}
+		>
 			<h2>Contact me</h2>
 
 			<div>

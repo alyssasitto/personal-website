@@ -64,6 +64,10 @@ body .app.active::before {
 	padding: 0 2rem;
 }
 
+.fade-in {
+	animation: fadeIn 2s forwards 0.5s;
+}
+
 @media screen and (min-width: 700px) {
 	.padding-helper {
 		padding: 0 7rem;
@@ -77,5 +81,27 @@ body .app.active::before {
 
 	.padding-helper {
 		padding: 0 13rem;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
