@@ -10,7 +10,7 @@ const Navbar = ({ navState, setNavState }) => {
 	};
 
 	return (
-		<nav className={`padding-helper ${navState ? "active" : ""}`}>
+		<nav className={`${navState ? "active" : ""}`}>
 			<div className="nav-logo">
 				<p>AS</p>
 			</div>
