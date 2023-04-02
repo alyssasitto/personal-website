@@ -33,16 +33,7 @@ const Project = ({ project, index }) => {
 		>
 			<img src={project.img} className="proj-img"></img>
 			<div className="project-card">
-				<div className="card-heading">
-					<h3>{project.title}</h3>
-					<a className="proj-link" href={project.liveLink}>
-						<img
-							src="images/eye.svg"
-							className="icon mt-helper"
-							alt="Eye icon"
-						/>
-					</a>
-				</div>
+				<h3>{project.title}</h3>
 
 				<div className="bullets">
 					{project.details.map((el) => {
@@ -56,10 +47,10 @@ const Project = ({ project, index }) => {
 				</div>
 
 				<div className="links">
-					<a href={project.liveLink}>
+					<a href={project.liveLink} target="_blank">
 						<img src="images/eye.svg" className="icon" alt="Eye icon" />
 					</a>
-					<a href={project.github}>
+					<a href={project.github} target="_blank">
 						<img src="images/github.svg" className="icon" alt="Gitub icon" />
 					</a>
 				</div>

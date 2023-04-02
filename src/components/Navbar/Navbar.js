@@ -40,7 +40,9 @@ const Navbar = ({ navState, setNavState }) => {
 					</li>
 
 					<li className="resume-btn" onClick={closeMenu}>
-						<a href="resume.pdf">Resumé</a>
+						<a href="resume.pdf" target="_blank">
+							Resumé
+						</a>
 					</li>
 				</ul>
 			</div>

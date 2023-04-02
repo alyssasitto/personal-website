@@ -15,7 +15,9 @@ const Header = () => {
 				</p>
 
 				<button className="resume-btn">
-					<a href="resume.pdf">Resumé</a>
+					<a href="resume.pdf" target="_blank">
+						Resumé
+					</a>
 				</button>
 			</div>
 		</header>

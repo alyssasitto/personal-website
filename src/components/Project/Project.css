@@ -35,10 +35,7 @@
 	content: none;
 }
 
-.card-heading {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+.project-card h3 {
 	margin-bottom: 2rem;
 }
 
