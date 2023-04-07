@@ -35,6 +35,12 @@ const Project = ({ project, index }) => {
 			<div className="project-card">
 				<h3>{project.title}</h3>
 
+				<div className="tools">
+					{project.tools.map((el) => {
+						return <span>{el}</span>;
+					})}
+				</div>
+
 				<div className="bullets">
 					{project.details.map((el) => {
 						return (

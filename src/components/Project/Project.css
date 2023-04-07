@@ -39,6 +39,21 @@
 	margin-bottom: 2rem;
 }
 
+.project-card .tools {
+	display: flex;
+	gap: 2rem;
+	margin-bottom: 2rem;
+	flex-wrap: wrap;
+}
+
+.project-card .tools span {
+	background-color: var(--light-blue);
+	color: var(--dark-green-blue);
+	font-weight: 600;
+	padding: 0.3rem 0.6rem;
+	border-radius: 3px;
+}
+
 .icon {
 	width: 2.5rem;
 }

@@ -17,6 +17,7 @@ const projects = [
 						Furthermore, I incorporated an external library called Swiper to add
 						a dynamic swiping effect to the color themes.`,
 		],
+		tools: ["React", "Redux", "CSS"],
 	},
 	{
 		title: "Spotify Clone",
@@ -37,6 +38,7 @@ const projects = [
 						Spotify's music library. The Web SDK enables playback control,
 						allowing users to pause, play, and skip tracks.`,
 		],
+		tools: ["React", "Express", "Auth 2.0"],
 	},
 	{
 		title: "Healthy Living",
@@ -57,6 +59,7 @@ const projects = [
 						application, and all user information is kept secure through
 						encrypted tokens.`,
 		],
+		tools: ["React", "Express", "MongoDB", "JWT"],
 	},
 	{
 		title: "Cat Fishing",
@@ -75,6 +78,7 @@ const projects = [
 						winning and losing logic into the game. The user earns points for
 						each fish caught, and the game ends if the user touches a dead fish.`,
 		],
+		tools: ["HTML", "CSS", "JavaScript"],
 	},
 ];
 
