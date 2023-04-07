@@ -92,6 +92,10 @@ input:-webkit-autofill:active {
 	color: var(--red);
 }
 
+.loading-gif {
+	width: 6rem;
+}
+
 @media screen and (min-width: 1000px) {
 	#contact {
 		width: 40%;

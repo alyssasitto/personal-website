@@ -15,6 +15,7 @@ const ContactCard = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
+	const [loading, setLoading] = useState(false);
 	const [successMessage, setSuccessMessage] = useState(null);
 	const [errMessage, setErrMessage] = useState(null);
 
@@ -31,10 +32,12 @@ const ContactCard = () => {
 	};
 
 	const handleSubmit = (e) => {
+		e.preventDefault();
+
 		setErrMessage(null);
 		setSuccessMessage(null);
 
-		e.preventDefault();
+		setLoading(true);
 
 		const body = {
 			name,
@@ -45,12 +48,14 @@ const ContactCard = () => {
 		axios
 			.post(`${API_URL}/contact`, body)
 			.then((response) => {
+				setLoading(false);
 				setName("");
 				setEmail("");
 				setMessage("");
 				setSuccessMessage(response.data.message);
 			})
 			.catch((err) => {
+				setLoading(false);
 				setErrMessage(err.response.data.err);
 			});
 	};
@@ -105,6 +110,13 @@ const ContactCard = () => {
 				/>
 			</div>
 
+			{loading && (
+				<img
+					src="images/loading.gif"
+					className="loading-gif"
+					alt="Loading gif"
+				/>
+			)}
 			{successMessage && <p className="success-msg">{successMessage}</p>}
 			{errMessage && <p className="err-msg">{errMessage}</p>}
 
