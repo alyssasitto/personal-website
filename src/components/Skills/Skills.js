@@ -7,7 +7,7 @@ import skills from "../../data/skillsData";
 require("./Skills.css");
 
 const Skills = () => {
-	const [ref, { entry }] = useIntersectionObserver({ threshold: 0.3 });
+	const [ref, { entry }] = useIntersectionObserver({ threshold: 0.1 });
 	const isVisible = entry && entry.isIntersecting;
 	const [inView, setInView] = useState("");
 

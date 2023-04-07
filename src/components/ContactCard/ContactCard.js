@@ -8,7 +8,7 @@ require("./ContactCard.css");
 const ContactCard = () => {
 	const API_URL = process.env.REACT_APP_API_URL;
 
-	const [ref, { entry }] = useIntersectionObserver({ threshold: 0.5 });
+	const [ref, { entry }] = useIntersectionObserver({ threshold: 0.2 });
 	const isVisible = entry && entry.isIntersecting;
 	const [inView, setInView] = useState("");
 
