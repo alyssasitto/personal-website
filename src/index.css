@@ -47,8 +47,9 @@ button {
 }
 
 body .app.active {
-	overflow-x: hidden;
+	position: fixed;
 	height: 100vh;
+	overflow: hidden;
 }
 
 body .app.active::before {
@@ -65,7 +66,7 @@ body .app.active::before {
 }
 
 .fade-in {
-	animation: fadeIn 2s forwards 0.5s;
+	animation: fadeIn 1s forwards 0.5s;
 }
 
 @media screen and (min-width: 700px) {

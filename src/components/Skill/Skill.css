@@ -5,25 +5,32 @@
 }
 
 .skill img {
-	width: 5rem;
+	width: 4rem;
 }
 
 .skill h3 {
+	font-size: 1.6rem;
 	margin-top: 2rem;
 }
 
 .mongodb img {
-	width: 4rem;
+	width: 3rem;
 }
 
 .mysql img {
-	width: 8rem;
+	width: 5.5rem;
 }
 
 .html5 img {
-	width: 5.4rem;
+	width: 4.2rem;
 }
 
 .css3 img {
-	width: 5.5rem;
+	width: 4.5rem;
+}
+
+@media screen and (min-width: 700px) {
+	.skill h3 {
+		font-size: 1.8rem;
+	}
 }
