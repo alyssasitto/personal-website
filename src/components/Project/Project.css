@@ -28,7 +28,7 @@
 }
 
 .project-card.active {
-	max-height: 100rem;
+	max-height: 120rem;
 }
 
 .project-card.active::before {
@@ -80,7 +80,7 @@
 
 .rm-rl-btns {
 	position: absolute;
-	bottom: 1rem;
+	bottom: 1.5rem;
 }
 
 .rm-rl-btns button {
