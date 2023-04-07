@@ -52,7 +52,7 @@
 #contact input:focus,
 #contact textarea:focus {
 	outline: none;
-	border: 1px solid var(--red);
+	border: 1px solid var(--light-blue);
 }
 
 input:-webkit-autofill,
