@@ -4,7 +4,7 @@ import { useIntersectionObserver } from "react-intersection-observer-hook";
 require("./AboutMe.css");
 
 const AboutMe = () => {
-	const [ref, { entry }] = useIntersectionObserver({ threshold: 0.1 });
+	const [ref, { entry }] = useIntersectionObserver({ threshold: 0.06 });
 	const isVisible = entry && entry.isIntersecting;
 	const [inView, setInView] = useState("");
 
