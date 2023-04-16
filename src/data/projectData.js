@@ -3,7 +3,7 @@ const projects = [
 		title: "Color Theme Visualizer",
 		img: "images/theme-app.png",
 		github: "https://github.com/alyssasitto/color-theme-visualizer",
-		liveLink: "https://theme-visualizer.netlify.app",
+		liveLink: "https://color-scheme-visualizer.netlify.app",
 		details: [
 			`A color theme
 						visualizer designed to provide users with an intuitive platform to
